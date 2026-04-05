@@ -5,24 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Proyecto</title>
 
-    <!--Conexión con CSS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- HEADER -->
     <header class="header">
-      <h1 class="header__title">Mi Proyecto</h1>
+      <div class="container header__container">
+        <h1 class="header__title">Mi Proyecto</h1>
+
+        <nav class="nav">
+          <a href="#inicio" class="nav__link">Inicio</a>
+          <a href="#features" class="nav__link">Características</a>
+          <a href="#contacto" class="nav__link">Contacto</a>
+        </nav>
+      </div>
     </header>
 
     <main class="main">
-      <section class="section">
-        <h2 class="subtitle">Bienvenido</h2>
-        <p class="text">Este es mi primer proyecto web</p>
-        <button class="button" type="button">Haz clic</button>
-      </section>
+      <div class="container">
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+          <div class="hero__content">
+            <div class="hero__text">
+              <h1>Gabriel<br />Martínez</h1>
+
+              <p class="hero__role">
+                Desarrollador Web | HTML, CSS, JavaScript
+              </p>
+
+              <p class="hero__description">
+                Desarrollador web en formación. Creo sitios modernos,
+                responsivos y listos para producción.
+              </p>
+
+              <div class="hero__buttons">
+                <a href="#" class="link-bar">Descargar CV</a>
+                <a href="#" class="link-bar">GitHub</a>
+                <a href="#contacto" class="link-bar">Hablemos</a>
+              </div>
+            </div>
+
+            <div class="hero__image">
+              <img src="img/gabriel.jpg" alt="Foto de Gabriel" />
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURES -->
+        <section id="features" class="features">
+          <h2 class="subtitle">Características</h2>
+
+          <div class="features__container">
+            <div class="feature">
+              <h3>Rápido</h3>
+              <p>El sitio carga rápidamente.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Responsive</h3>
+              <p>Se adapta a cualquier dispositivo.</p>
+            </div>
+
+            <div class="feature">
+              <h3>Moderno</h3>
+              <p>Diseño limpio y actual.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projects">
+          <h2 class="subtitle">Proyectos</h2>
+
+          <div class="projects__container">
+            <div class="project">
+              <div class="project__image project__image--cafeteria"></div>
+              <h3>Cafetería</h3>
+              <p>Sitio web responsivo para una cafetería.</p>
+            </div>
+
+            <div class="project">
+              <div class="project__image project__image--landing"></div>
+              <h3>Landing Page</h3>
+              <p>Página moderna con diseño adaptable.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact">
+          <div class="contact__card">
+            <h2>Contacto</h2>
+
+            <p class="contact__email">
+              <a href="mailto:edgarmtzsan@gmail.com">edgarmtzsan@gmail.com</a>
+            </p>
+
+            <div class="contact__social">
+              <img src="img/linkedin.svg" alt="LinkedIn" />
+              <img src="img/facebook.svg" alt="Facebook" />
+              <img src="img/instagram.svg" alt="Instagram" />
+              <img src="img/x.svg" alt="X" />
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer class="footer">
-      <p class="footer-text">© 2026 Mi Proyecto</p>
+      <p class="footer-text">© 2026 Gabriel Martínez</p>
     </footer>
   </body>
 </html>
